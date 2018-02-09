@@ -14,11 +14,13 @@ html,body {
 h1,h2,h3,h4,h5,h6	{
 		font-weight: bold;
 	}
+
 .slider-wrapper {
 	width: 100%;
 	height: 400px;
 	position: relative;
 }
+
 .slide {
 	float: left;
 	position: absolute;
@@ -27,6 +29,7 @@ h1,h2,h3,h4,h5,h6	{
 	opacity: 0;
 	transition: opacity 3s linear;
 }
+
 .slider-wrapper > .slide:first-child {
 	opacity: 1;
 }
@@ -94,13 +97,13 @@ h1,h2,h3,h4,h5,h6	{
 
 	</style>
 
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<head >
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    	<meta http-equiv="x-ua-compatible" content="ie=edge" />
     	<title>Valentine Special</title>
    		<!-- Font Awesome -->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	    <!-- Bootstrap core CSS -->
     		<link href="css/bootstrap.min.css" rel="stylesheet">
     		<!-- Material Design Bootstrap -->
@@ -108,66 +111,59 @@ h1,h2,h3,h4,h5,h6	{
     		<!-- Your custom styles (optional) -->
     		<link href="css/style.css" rel="stylesheet">
     		<center>
-    				<h1 style="font-family: Comic Sans MS;" class="animated bounce infinite"><b>HAPPY VALENTINE'S DAY</b> 
+    				<h1 style="font-family: Comic Sans MS;" class="animated rubberBand infinite"><b>HAPPY VALENTINE'S DAY</b> 
     				</h1>
-			<h2 style="font-family: Bradley Hand ITC;"><b>LOVE </b><img class="animated rubberBand infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></h3>
+			<h2 style="font-family: Bradley Hand ITC;"><b>LOVE </b><img class="animated pulse infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" />
+			</h3>
        		</center>
 	</head>
 
-	<body  style="background-color:#fafafa;">
+	<body style="background-color:#fafafa;" >
 		
 	
-		<div id="div_1" class="container-fluid">
+		<div class="container-fluid">
 		
         		
     
 
 
-			<div id="div_2" class="row">
+			<div class="row">
 					<!--1st Card-->
-				<div id="div_3" class="card col-md-3 animated bounceInDown ">
-						<div id="div_4" class="view overlay hm-white-slight">
-        					<img id="img_1" src="13.jpg" class="img-fluid" alt="">
-        					
+				<div class="card col-md-3 animated bounceInDown ">
+						<div id="image1" class="view overlay hm-white-slight">
+        					<img id="image1"  src="13.jpg" class="img-fluid" alt="">
+        					<!--a href="#">
+            				<div class="mask"></div>
+        					</a-->
     					</div>
 
     
-    					<div id="div_5" class="card-body">
+    					<div id="cardbody_1" class="card-body">
        
-        						<h4 id="h_1" class="card-title " style="font-family: Bradley Hand ITC;"><img id="img_2" src="https://assets.rbl.ms/14704084/980x.jpg" height="42" width="42"/><b id="b_1">You are the reason I wake up with a smile every morning. You are the secret to my peaceful nights.</b><img id="img_3" src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/sleeping-face.png" height="42" width="42" /> </h4>
+        						<h4 id="quote1" class="card-title " style="font-family: Bradley Hand ITC;"><img id="emoji" src="https://assets.rbl.ms/14704084/980x.jpg" height="42" width="42"/><b id="quote1">You are the reason I wake up with a smile every morning. You are the secret to my peaceful nights.</b><img id="icon" src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/sleeping-face.png" height="42" width="42" /> </h4>
         
-        						<a id="a_1" href="#" style="border-radius:1.25rem;overflow:hidden;" class="btn btn-primary animated headShake infinite" data-toggle="modal" data-target="#exampleModal" >Click to Open <img id="img_4" src="https://orig00.deviantart.net/76f9/f/2015/198/3/f/_aph_america__surprise_box_pagedoll_by_chesle-d91p0lw.gif" height="60" width="60" /></a>
+        						<a id="btn1" href="#" style="border-radius:1.25rem;overflow:hidden;"class="btn btn-primary animated headShake infinite" data-toggle="modal" data-target="#exampleModal" >Click to Open <img id="surprise_box" src="https://orig00.deviantart.net/76f9/f/2015/198/3/f/_aph_america__surprise_box_pagedoll_by_chesle-d91p0lw.gif" height="60" width="60" /></a>
     					</div>
 
 				</div>
 
 												<!--2nd Card -->
-				<div id="div_6" class="slider card col-md-5 animated rollIn" id="main-slider" >
-					<div id="div_7" class="slider-wrapper" style="overflow:hidden;">
-       						<img id="img_5" src="12.jpg" class="slide img-fluid " alt="First" />
-						<img id="img_6" src="x1.jpg" class="slide" alt="Second" />
-						<img id="img_7" src="x4.jpg" class="slide" alt="Third" />
-						<img id="img_8" src="x10.jpg" class="slide" alt="Fourth" />
-						<img id="img_9" src="x11.jpg" class="slide" alt="Fifth" />
-						<img id="img_10" src="x12.jpg" class="slide" alt="Sixth" />
-						<img id="img_11" src="x2.jpg" class="slide" alt="Seventh" />
-						<img id="img_12" src="x5.jpg" class="slide" alt="Eight" />
-						<img id="img_13" src="x6.jpg" class="slide" alt="Sixth" />
-						<img id="img_14" src="x7.jpg" class="slide" alt="Sixth" />
-						<img id="img_15" src="x18.jpg" class="slide" alt="Sixth" />
-						
-
-						
-       						<img id="img_16" src="xxx.jpg" alt="Seventh" class="slide img-fluid" />
-						
+				<div class="slider card col-md-5 animated rollIn" id="sexy-slider" >
+					<div class="slider-wrapper">
+       					<img id="image2" src="12.jpg" class="slide img-fluid " alt="First" />
+       					<img id="imagex" src="xxx.jpg" alt="Second" class="slide" />
+						<!--a href="#">
+         				<div class="mask"></div>
+       				 	</a-->
    					</div>
 					<br/><br/><br/><br/>
-					<div id="div_8" class="card-body animated rollIn ">
+					<div id="cardbody_2" class="card-body animated rollIn ">
         					<center>
-                        <h4 class="card-title" style="font-family: Bradley Hand ITC;"><b id="quote2">Days are beautiful with you.</b><img id="xx" src="https://2.bp.blogspot.com/-gFI0d6E6VXg/WJoDLmCAwmI/AAAAAAAAT-8/DwHBDnv8FVcf6AJJWtOlF6k8iEMvByW9ACLcB/s1600/love-emoji.png" height="52" width="62"></h4></center>
-                            <br/><br/><br/>
-                        <center><a id="btn2" style="border-radius: 0.75rem;" href="#" class="btn btn-primary animated rubberBand infinite" data-toggle="modal" data-target="#exampleModax"><b>Wishes For the Day<img id="candle1" src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Candle-PNG-Transparent-Image.png" width="50" height="50"></b></a>
-                        </center>						</div>
+        				<h4 class="card-title" style="font-family: Bradley Hand ITC;"><b id="quote2">Days are beautiful with you.</b><img id="xx" src="https://2.bp.blogspot.com/-gFI0d6E6VXg/WJoDLmCAwmI/AAAAAAAAT-8/DwHBDnv8FVcf6AJJWtOlF6k8iEMvByW9ACLcB/s1600/love-emoji.png" height="52" width="62"></h4></center>
+        					<br/><br/><br/>
+        				<center><a id="btn2" style="border-radius: 0.75rem;" href="#" class="btn btn-primary animated rubberBand infinite" data-toggle="modal" data-target="#exampleModax"><b>Wishes For the Day<img id="candle1" src="http://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Candle-PNG-Transparent-Image.png" width="50" height="50"></b></a>
+						</center>
+						</div>
 
 				</div>
 										<!2nd--/.Card-->
@@ -177,7 +173,7 @@ h1,h2,h3,h4,h5,h6	{
 
               								<!3rd --Card-->
 				<div  class="card col-md-4 animated flipInX" >
-					<div   class="view overlay hm-white-slight">
+					<div  class="view overlay hm-white-slight">
         				<img id="image3"src="14.jpg" class="img-fluid" alt="" >
 						
         				<!--a href="#">
@@ -186,7 +182,7 @@ h1,h2,h3,h4,h5,h6	{
     				</div>
 					<div id="cardbody_3" class="card-body"><!--True love is a glimpse of heaven. It is inspiring and uplifting just like you. -->
         
-        				<h4 id="h_3" class="card-title" style="font-family: Bradley Hand ITC;"><b id="quote3">Life without you is like a broken pencil:Pointless</b><img id="Pointless" src="http://bani.com.bd/static/quotation/img/broken-pencil.png" height="60" width="70" /></h4>
+        				<h4 class="card-title" style="font-family: Bradley Hand ITC;"><b id="quote3">Life without you is like a broken pencil:Pointless</b><img id="Pointless" src="http://bani.com.bd/static/quotation/img/broken-pencil.png" height="60" width="70" /></h4>
        							<br/><br/><br/>
         				<center><a id="btn3" href="#" style="border-radius: 0.75rem;" class="btn btn-primary animated tada infinite" data-toggle="modal" data-target="#exampleModaq" >Together Forever<img id="roses" src="http://3.bp.blogspot.com/-IYZfTvjom8Y/Vi46GZMOCsI/AAAAAAAADaQ/1HVwBmYM2lk/s1600/megasoftforu.png" height="50" width="50"></a>
 						</center>
@@ -196,85 +192,109 @@ h1,h2,h3,h4,h5,h6	{
 			</div>
 			<br/>
 			<center>
-				<div  class="row">
-    				<div  class="col-md-6 ">
-    					<div  class="card col-md-6 animated swing" >
+				<div class="row">
+    				<div class="col-md-6 ">
+    					<div class="card col-md-6 animated swing" >
 
     								<!--4TH cARD -->
-    						<div  class="view overlay hm-white-slight">
-        						<img id="div_15" src="115.jpg" class="img-fluid" alt="">
-        						
+    						<div class="view overlay hm-white-slight">
+        						<img id="image4" src="115.jpg" class="img-fluid" alt="" >
+        						<!--a href="#">
+            					<div class="mask"></div>
+        						</a-->
     						</div>
-							<div id="div_16" class="card-body">
+							<div id="cardbody_4" class="card-body">
         						
-        						<h4 id="h_4"  class="card-title" style="font-family: Bradley Hand ITC;"><b id="b_4">For the rest of my life, I will count each day with you well spent.</b><img src="https://lh3.googleusercontent.com/z8Qe7KAa2OpLjPJQK1qHbCC3py2WDxs3DYjgOZHITXh43Gl7PrG_BYzKHO7AX2vfMCk=w300" height="52" width="72"/></h4>
+        						<h4  class="card-title" style="font-family: Bradley Hand ITC;"><b id="quote4">For the rest of my life, I will count each day with you well spent.</b><img id="calender" src="https://lh3.googleusercontent.com/z8Qe7KAa2OpLjPJQK1qHbCC3py2WDxs3DYjgOZHITXh43Gl7PrG_BYzKHO7AX2vfMCk=w300" height="52" width="72"/></h4>
         
-        						<a id="a_3" style="border-radius:0.75rem;" href="#" class="btn btn-primary animated rubberBand infinite" data-toggle="modal" data-target="#exampleModaa" >Lip Lines <img id="img_19" src="https://cdn.shopify.com/s/files/1/1061/1924/products/See_No_Evil_Monkey_Emoji_large.png?v=1480481037" height="42" width="42" /></a>
+        						<a id="btn4" href="#" class="btn btn-primary animated rubberBand infinite" data-toggle="modal" data-target="#exampleModaa" >Lip Lines</a>
     						</div>
 						</div>
 					</div>
-    				<div id="div_17" class="col-md-6"><div id="div_18" class="card col-md-6 animated jello" >
+    				<div class="col-md-6"><div class="card col-md-6 animated jello" >
 
     								<!--5TH Card image-->
-    				<div id="div_19" class="view overlay hm-white-slight">
-        				<img id="img_20" src="116.jpg" class="img-fluid" alt="">
-        				
+    				<div class="view overlay hm-white-slight">
+        				<img id="image5" src="116.jpg" class="img-fluid" alt="">
+        				<!--a href="#">
+            			<div class="mask"></div-->
+        				</a>
     				</div>
 
     
-    				<div id="div_20" class="card-body">
+    				<div class="card-body">
        
-        				<h4 id="h_5" class="card-title" style="font-family: Bradley Hand ITC;"><b id="b_5">All of the little things you do warm my heart. You are a constant source of joy in my life.</b><img src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/kiss-mark.png" height="42" width="42"></h4>
+        				<h4 class="card-title" style="font-family: Bradley Hand ITC;"><b id="quote5">All of the little things you do warm my heart. You are a constant source of joy in my life.<img id="kiss" src="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/kiss-mark.png" height="42" width="42"></b></h4>
        
-        				<a id="btn5" style="border-radius: 1rem;" href="#" class="btn btn-primary animated headShake infinite" data-toggle="modal" data-target="#exampleModat" >ପ୍ରେମ ସନ୍ଦେଶ <img id="oletter" src="http://dryicons.com/uploads/icon/svg/6053/a1eab1fa-77c1-4d88-b52c-0a2b64a15851.svg" height="42" width="42"></a>   				</div>
+        				<a id="btn5" style="border-radius: 1rem;" href="#" class="btn btn-primary animated headShake infinite" data-toggle="modal" data-target="#exampleModat" >ପ୍ରେମ ସନ୍ଦେଶ <img id="oletter" src="http://dryicons.com/uploads/icon/svg/6053/a1eab1fa-77c1-4d88-b52c-0a2b64a15851.svg" height="42" width="42"></a>
+    				</div>
 				</div>
 			</center>
 
 <br/>
-					<a id="a_4" onclick="window.location.reload();">
+<a onclick="window.location.reload();">
 				<div id="jadoo" class="hover_bkgr_fricc" >
 
-    <span id="span_1" class="helper" ></span>
+    <span class="helper" ></span>
     <div>
         
-                <h2 style="font-family: Bradley Hand ITC;font-weight: bold;" id="Hi SweetHeart!!!" class="card-title">Hiiiiii SweetHeart!!!<img id="img_21" class="animated pulse infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></h2>
+                <h2 style="font-family: Bradley Hand ITC;font-weight: bold;" id="Hi SweetHeart!!!" class="card-title">Hiiiiii SweetHeart!!!<img class="animated pulse infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></h2>
                 <!--Text-->
                 <h4  style="font-family: Bradley Hand ITC;font-weight: bold;" id="jadoo_p" class="card-text ">I love you. 
                 </h4>
-                <img id="img_22" src="https://images.vexels.com/media/users/3/130940/isolated/preview/ba2f9398c03f384b8ae418e62dba0dde-hipster-cross-axe-icon-by-vexels.png" height="42" width="42" />
+                <img src="https://images.vexels.com/media/users/3/130940/isolated/preview/ba2f9398c03f384b8ae418e62dba0dde-hipster-cross-axe-icon-by-vexels.png" height="42" width="42" />
     </div>
 
 </div></a>
-						
-					<div id="div_21">
-				<center>
-	<h4 id="h_6" style="font-family: Comic Sans MS;" class="animated pulse infinite"><img id="img_23" src="xxx.jpg" height="100" width="100"> Romantic Pages of Life </h4></center>
-					</div>
+				
+				<!--alert --aria-hidden="true"-->
+	<!--div id="alert" class="box" >hiiiiiiii</div
+	<div id="toast"><div id="img">Icon</div><div id="desc">A notification message..</div></div>
+-->
+	 <!--div id="" class="card card-dark" style="width: 200px">
+
+            <!Card image>
+            <div id="gajab" class="view overlay hm-white-slight">
+                <img id="jadoo_image" src="https://mdbootstrap.com/img/Photos/SLides/img%20(125).jpg" class="img-fluid" alt="photo">
+                
+            </div>
+
+            <!Card content>
+            <div id="jadoo_card_body" class="card-body">
+                <!Title>
+                <h4 style="font-family: Bradley Hand ITC;font-weight: bold;" id="Hi SweetHeart!!!" class="card-title">Hi SweetHeart!!!</h4>
+                <!Text
+                <h5 style="font-family: Bradley Hand ITC;font-weight: bold;" id="jadoo_p" class="card-text ">I love you. 
+                </h5>
+                
+            </div>
+
+        </div>-->
 	
-				<div class="slider box animated jello infinite" id="sexy-slider" style="width:50%;"><!-- outermost container element -->
-		<div id="div_22" class="slider-wrapper" style="border-radius:1.25rem;overflow:hidden;" ><!-- innermost wrapper element -->
-			<img id="img_24" src="dd.jpg" alt="First" class="slide" />
-			<img id="img_25" src="d.jpg" alt="Second" class="slide" />
-			<img id="img_26" src="ccc.jpg" alt="Third" class="slide" />
-			<img id="img_27"    src="c.jpg" alt="Fourth" class="slide" />
-			<img  id="img_28"  src="bbb.jpg" alt="Fifth" class="slide" />
-			<img id="img_29" src="flower.jpg" alt="Sixth" class="slide" />
-			<img id="img_30" src="777.jpg" alt="Seventh" class="slide" />
-			<img id="img_31" src="bb.jpg" alt="Eighth" class="slide" />
-			<img id="img_32" src="b.jpg" alt="Ninth" class="slide" />
-			<img id="img_33" src="a.jpg" alt="Tenth" class="slide" />
-			<img id="img_34" src="aaa.jpg" alt="Eleventh" class="slide" />
-			<img id="img_35" src="aa.jpeg" alt="Twelvth" class="slide" />
-			<img id="img_36" src="ddd.jpeg" alt="Thirteenth" class="slide" />
-			<img id="img_37" src="x3.jpg" class="slide" alt="Fourteenth" />
-			<img id="img_38" src="x8.jpg" class="slide" alt="Fifteenth" />
-			<img id="img_39"    src="x10.jpg" class="slide" alt="Seventeenth" />
-			<img id="img_40" src="x13.jpg" class="slide" alt="Eighteen" />
-			<img id="img_41" src="x14.jpg" class="slide" alt="Ninetine" />
-			<img id="img_42" src="x15.jpg" class="slide" alt="Twenty" />
-			<img id="img_43" src="x16.jpg" class="slide" alt="Twenty one" />
-			<img id="img_44" src="x17.jpg" class="slide" alt="Twenty two" />
+
 						
+			<div>
+				<center>
+	<h4 style="font-family: Comic Sans MS;" class="animated pulse infinite"><img src="xxx.jpg" height="100" width="100"> Romantic Pages of Life </h4></center>
+					</div>
+			
+				<div class="slider box animated pulse infinite" id="main-slider" style="width:70%;margin-bottom: 10%;"><!-- outermost container element -->
+		<div class="slider-wrapper" style="border-radius:1.25rem;overflow:hidden;" ><!-- innermost wrapper element -->
+			<img src="dd.jpg" alt="First" class="slide" />
+			<img src="d.jpg" alt="Second" class="slide" />
+			<img src="ccc.jpg" alt="Third" class="slide" />
+			<img src="c.jpg" alt="Fourth" class="slide" />
+			<img src="bbb.jpg" alt="Fifth" class="slide" />
+			<img src="flower.jpg" alt="Sixth" class="slide" />
+
+			<img src="777.jpg" alt="Seventh" class="slide" />
+			<img src="bb.jpg" alt="Eighth" class="slide" />
+			<img src="b.jpg" alt="Ninth" class="slide" />
+			<img src="a.jpg" alt="Tenth" class="slide" />
+			<img src="aaa.jpg" alt="Eleventh" class="slide" />
+			<img src="aa.jpeg" alt="Twelvth" class="slide" />
+			<img src="ddd.jpeg" alt="Thirteenth" class="slide" />
+			
 			
 			
 			
@@ -288,70 +308,75 @@ h1,h2,h3,h4,h5,h6	{
    
 
 			<!--1st modal box-->			
-			<div  class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    			<div id="div_23" data-dismiss="modal" class="modal-dialog" role="document">
-        			<div id="div_24" class="modal-content">
-            			<div id="div_25" class="modal-header" >
+			<div   class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    			<div id="1.2" data-dismiss="modal" class="modal-dialog" role="document">
+        			<div id="1.3" class="modal-content">
+            			<div id="1.4" class="modal-header" >
             				
-                			<h5 id="h_7" class="modal-title" id="exampleModalLabel"><b id="b_6">Surprise!!!</b><img style="border-radius: 1rem;" src="kero.jpg" height="52" width="60" /></h5>
-                			
+                			<h5 class="modal-title" id="exampleModalLabel"><b id="Surprise">Surprise!!!</b><img id="Surprise_image" style="border-radius: 1rem;" src="kero.jpg" height="52" width="60" /></h5>
+                			<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>-->
             			</div>
-        				<div id="div_26" class="modal-body animated rubberBand" style="font-family: Bradley Hand ITC;">
-	            			<h5 id="h_8" s1tyle="font-weight: bold;">Hiiiiii Sweeetheart, I <img id="img_45" class="animated bounce infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /> U soooooo much!!!!<img id="img_46" data-dismiss="modal" src="https://2.bp.blogspot.com/-qnu_L8f-nyg/WJoB_k4MkfI/AAAAAAAAT-s/xp_BIjerOvIa_oYRGfibNvuL7ER7Sn1bwCLcB/s1600/girl-emoji-kiss.png" height="42" width="42">
+        				<div id="1.5" class="modal-body animated rubberBand" style="font-family: Bradley Hand ITC;">
+	            			<h5 id="love" style="font-weight: bold;">Hiiiiii Sweeetheart, I <img class="animated pulse infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /> U soooooo much!!!!<img data-dismiss="modal" src="https://2.bp.blogspot.com/-qnu_L8f-nyg/WJoB_k4MkfI/AAAAAAAAT-s/xp_BIjerOvIa_oYRGfibNvuL7ER7Sn1bwCLcB/s1600/girl-emoji-kiss.png" height="42" width="42">
 	            			<br/>
-	            			Here comes our Anniversary!!!<img id="img_47" class="animated bounce infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /><br/>
-	            			<h4 id="h_9">It's now 1 year,Life is way more exciting and romantic with you.You are just like my personal and private Santa.You	gave the bestest suprises that i could ever imagine.After your every surprise I need atleast 2 to 3 min. for reacting.I like the way u smile and come and close to me, If possible I could have captured that moment bt unfortunately it's impossible thats why i want to keep u forever JAAN.Thanx alot sweetheart for tons of caring and love for me.
-	            			You gave the sexiest moments of my life.And i want to kiss you for the way you make me feel special.You are so Museum type of material fr me,thats why i want to keep gd care of u and fr that reason i want to keep you close forever.<img src="http://fyf.tac-cdn.net/images/products/large/F-945.jpg" height="50" width="50" />
-                        </h4>
+	            			<h4 id="love_letter">Here comes our Anniversary!!!<img class="animated pulse infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /><br/>
+	            			It's now 1 year,Life is way more exciting and romantic with you.You are just like my personal and private Santa.You	gave the bestest suprises that i could ever imagine.After your every surprise I need atleast 2 to 3 min. for reacting.I like the way u smile and come and close to me, If possible I could have captured that moment bt unfortunately it's impossible thats why i want to keep u forever JAAN.Thanx alot sweetheart for tons of caring and love for me.
+	            			You gave the sexiest moments of my life.And i want to kiss you for the way you make me feel special.You are so Museum type of material fr me,thats why i want to keep gd care of u and fr that reason i want to keep you close forever.<img id="love_letter_image" src="http://fyf.tac-cdn.net/images/products/large/F-945.jpg" height="50" width="50" /></h4>
 					 
 						</div>
-	        			<div id="div_27" class="modal-footer"></div>
+	        			<div id="1.6" class="modal-footer"></div>
                 	</div>
             	</div>
         	</div>
    
         				<!--2nd Modal box -->
-								<div  class="modal fade" id="exampleModax" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    								<div id="div_29" data-dismiss="modal" class="modal-dialog" role="document">
-       				 						<div id="div_30" class="modal-content">
-          						  				<div id="div_31" class="modal-header">
-           				     						<h5  class="modal-title" id="exampleModalLabel">
-                                                        <img id="img_48" style="border-radius: 1rem;width: 50;" data-dismiss="modal" src="https://m.popkey.co/bff2af/3G0bJ.gif" height="70" width="60"></h5>
-              				  						
+								<div class="modal fade" id="exampleModax" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    								<div id="q8" data-dismiss="modal" class="modal-dialog" role="document">
+       				 						<div id="q7" class="modal-content">
+          						  				<div id="q6" class="modal-header">
+           				     						<h5 class="modal-title" id="exampleModalLabel"><img id="q5" style="border-radius: 1rem;width: 50;" data-dismiss="modal" src="https://m.popkey.co/bff2af/3G0bJ.gif" height="70" width="60"></h5>
+              				  						<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>-->
            				 						</div>
-          				  						<div id="div_32" class="modal-body animated slideInUp" style="font-family: Bradley Hand ITC;">
-               				 							<h4 id="h_11" style="font-weight: bold;">
-               				 							<b id="b_7">HAPPY  VALENTINE'S DAY !!!! JAAN   </b></h4>
+          				  						<div id="q4" class="modal-body animated slideInUp" style="font-family: Bradley Hand ITC;">
+               				 							<h4 style="font-weight: bold;">
+               				 							<b id="q3">HAPPY  VALENTINE'S DAY !!!! JAAN   </b></h4>
            						 				</div>
-           						 				<div id="div_33" class="modal-footer"><img id="img_49" class="animated bounce infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></div>
+           						 				<div id="q2" class="modal-footer"><img id="q1" class="animated bounce infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></div>
         									</div>
     								</div>
 								</div>
 								<!3rd-- Modal -->
 <div class="modal fade" id="exampleModaq" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div id="div_34" data-dismiss="modal" class="modal-dialog" role="document">
-        <div id="div_35" class="modal-content">
-            <div id="div_36" class="modal-header">
-                <h5 id="h_12" class="modal-title" id="exampleModalLabel"><img id="img_50" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></h5>
-               
+    <div id="ddd8" data-dismiss="modal" class="modal-dialog" role="document">
+        <div id="ddd7" class="modal-content">
+            <div id="ddd6" class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><img id="id" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></h5>
+               <!--button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button-->
             </div>
-            <div id="div_37" class="modal-body animated rotateIn" style="font-family: Bradley Hand ITC;">
-                <h4 id="div_38" style="font-weight: bold;">We started from </h4><h3 id="h_13">Long Distance Relationship.........</h3><h5 id="h_14" style="font-weight: bold;">It's a lengthy word,bt u really give a Special meaning to it.You never let me feel the absenece of ur presence by loving and caring 24*7.As we are in relationship after being best friends in our sexy Clg Days,that Strong bonding turns into Deep bondings.
+            <div id="ddd5" class="modal-body animated rotateIn" style="font-family: Bradley Hand ITC;">
+                <h4 id="ddd4" style="font-weight: bold;">We started from </h4><h3 id="Long Distance Relationship.........">Long Distance Relationship.........</h3><h5 id="ddd2" style="font-weight: bold;">It's a lengthy word,bt u really give a Special meaning to it.You never let me feel the absenece of ur presence by loving and caring 24*7.As we are in relationship after being best friends in our sexy Clg Days,that Strong bonding turns into Deep bondings.
                 Belief turns into trust and Like Changes to Love,something magical happened.Then I figured out that u are my permanent Magnet and this is the reason that Its so difficult to be away from you,I want to hold u forever,keep u in my arms and never let you go.You are just awsome I can't even find duplicate copy of u,that makes U special.And above all trust me!!! I WILL LOVE YOU TO THE FULLEST.</h5>
                 </div>
-            <div id="div_39" class="modal-footer">
-                <img id="img_51" data-dismiss="modal" src="http://www.cbglnmc.com/wp-content/uploads/2017/07/Single-Rose.jpg" height="62" width="72">
+            <div id="ddd1" class="modal-footer">
+                <img id="ddd" data-dismiss="modal" src="http://www.cbglnmc.com/wp-content/uploads/2017/07/Single-Rose.jpg" height="62" width="72">
             
             </div>
         </div>
     </div>
 </div>
-<!4TH-- Modal -->
+
+				<!4TH-- Modal -->
 <div class="modal fade" id="exampleModaa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div id="123456"class="modal-dialog" role="document" onclick="window.location.reload()">
         <div id="111111" class="modal-content">
             <div id="1.1.1" class="modal-header">
-                <h5 class="modal-title"  id="exampleModalLabel">Kan!!!<img id="devil" src="https://4.bp.blogspot.com/-ETVOCcGE5Wg/WJn9XUpnmYI/AAAAAAAAT98/MhucLHREH88aog0j3876qw783zHMT5pAwCLcB/s1600/rose-in-mouth-emoji.png" height="60" width="100" /></h5>
+                <h5 class="modal-title"  id="exampleModalLabel">Kan!!!<img id="devil" src="http://1.bp.blogspot.com/-VIJpiR1Ngnw/U5oBvJpKm6I/AAAAAAAAI_g/w5KM8SRMmA4/s1600/devil-smiley.png" height="60" width="100"></h5>
                 
             </div>
             <div id="1.2.3" class="modal-body" style="overflow: hidden;font-family: Bradley Hand ITC;">
@@ -364,7 +389,7 @@ Being drenched in you brings out the best in me.</h3></div>
             </div>
             <div id="qw" class="modal-footer">
                 <!--button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="window.location.reload()">Sahi to??</button-->
-                <button id="btn6" type="button" class="close" onclick="window.location.reload()" aria-label="Close">
+                <button type="button" class="close" onclick="window.location.reload()" aria-label="Close">
                     <span id="qq" aria-hidden="true">&times;</span>
                 </button>
                 
@@ -404,7 +429,15 @@ Being drenched in you brings out the best in me.</h3></div>
 </div>
 				 <!-- SCRIPTS -->
     <!-- JQuery -->
-				<script type="text/javascript">
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
     	function ag_jaado() {
     		var x = document.getElementById("jadoo");
     		x.style.display ="none";
@@ -428,9 +461,9 @@ Being drenched in you brings out the best in me.</h3></div>
     			//mydiv.style.display ='block';
     					//alert('hh');
     		}
-            if (a.length != 0) {
+            else{
                 //alert(a);
-		    
+
             }
     		
     		
@@ -438,7 +471,6 @@ Being drenched in you brings out the best in me.</h3></div>
     	}
     	document.body.addEventListener("click", blankclick)
     </script>
-    
      <script type="text/javascript">
     (function() {
 	
@@ -500,15 +532,19 @@ Being drenched in you brings out the best in me.</h3></div>
 	
 	document.addEventListener( "DOMContentLoaded", function() {
 		
+		var alert_box = document.getElementById('jadoo');
+		alert_box.style.display = 'none';
+
 		var slider = new Slideshow( "#main-slider" );
 		
 	});
 	
 	
 })();
+
     </script>
-				<script type="text/javascript">
-    (function() {
+    <script type="text/javascript">
+    	(function() {
 	
 	function Slideshow( element ) {
 		this.el = document.querySelector( element );
@@ -574,15 +610,9 @@ Being drenched in you brings out the best in me.</h3></div>
 	
 	
 })();
+
     </script>
     
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>
