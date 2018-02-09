@@ -35,6 +35,63 @@ h1,h2,h3,h4,h5,h6	{
     border-radius: 1.25rem;
     border: 2px solid #dddbda;
 		}
+		.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
 	</style>
 
 	<head>
@@ -183,6 +240,20 @@ h1,h2,h3,h4,h5,h6	{
 			</center>
 
 <br/>
+					<a onclick="window.location.reload();">
+				<div id="jadoo" class="hover_bkgr_fricc" >
+
+    <span class="helper" ></span>
+    <div>
+        
+                <h2 style="font-family: Bradley Hand ITC;font-weight: bold;" id="Hi SweetHeart!!!" class="card-title">Hiiiiii SweetHeart!!!<img class="animated pulse infinite" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/emoji-one/104/heavy-black-heart_2764.png" height="42" width="42" /></h2>
+                <!--Text-->
+                <h4  style="font-family: Bradley Hand ITC;font-weight: bold;" id="jadoo_p" class="card-text ">I love you. 
+                </h4>
+                <img src="https://images.vexels.com/media/users/3/130940/isolated/preview/ba2f9398c03f384b8ae418e62dba0dde-hipster-cross-axe-icon-by-vexels.png" height="42" width="42" />
+    </div>
+
+</div></a>
 						
 					<div>
 				<center>
@@ -340,6 +411,37 @@ Being drenched in you brings out the best in me.</h3></div>
 </div>
 				 <!-- SCRIPTS -->
     <!-- JQuery -->
+				<script type="text/javascript">
+    	function ag_jaado() {
+    		var x = document.getElementById("jadoo");
+    		x.style.display ="none";
+
+    	}
+    </script>
+    <script type="text/javascript">
+    	function blankclick() {
+    		
+    	
+    		var a= event.target.id;
+    		if(a.length == 0){
+
+    
+    				var x = document.getElementById("jadoo");
+
+    				var mydiv = document.getElementById("jadoo_p");
+    				mydiv.innerHTML = "U jst clicked on nothing.Try clicking on Buttons It will be effective <br/>--Kero" ;
+    				x.style.display = "block";
+    //setTimeout(function(){ x.style.display = x.style.display.replace("block", "none"); }, );
+    			//mydiv.style.display ='block';
+    					//alert('hh');
+    		}
+    		
+    		
+    		
+    	}
+    	document.body.addEventListener("click", blankclick)
+    </script>
+    
      <script type="text/javascript">
     (function() {
 	
