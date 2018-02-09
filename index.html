@@ -181,7 +181,7 @@ h1,h2,h3,h4,h5,h6	{
 	<h4 style="font-family: Comic Sans MS;" class="animated pulse infinite"><img src="xxx.jpg" height="100" width="100"> Romantic Pages of Life </h4></center>
 					</div>
 	
-				<div class="slider box animated jello infinite" id="main-slider" style="width:50%;"><!-- outermost container element -->
+				<div class="slider box animated jello infinite" id="sexy-slider" style="width:50%;"><!-- outermost container element -->
 		<div class="slider-wrapper" style="border-radius:1.25rem;overflow:hidden;" ><!-- innermost wrapper element -->
 			<img src="dd.jpg" alt="First" class="slide" />
 			<img src="d.jpg" alt="Second" class="slide" />
@@ -386,6 +386,74 @@ Being drenched in you brings out the best in me.</h3></div>
 	document.addEventListener( "DOMContentLoaded", function() {
 		
 		var slider = new Slideshow( "#main-slider" );
+		
+	});
+	
+	
+})();
+    </script>
+				<script type="text/javascript">
+    (function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#sexy-slider" );
 		
 	});
 	
